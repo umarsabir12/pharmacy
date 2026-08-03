@@ -79,3 +79,70 @@ export const IconMail = (props) => (
     <path d="m4 7 8 6 8-6" />
   </svg>
 );
+
+export const IconUpload = (props) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" {...props}>
+    <path d="M12 16V4M12 4 7 9M12 4l5 5" />
+    <path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3" />
+  </svg>
+);
+
+export const IconStar = (props) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+    <path d="m12 2.5 2.9 6.32 6.85.66-5.18 4.7 1.53 6.82L12 17.77l-6.1 3.23 1.53-6.82-5.18-4.7 6.85-.66Z" />
+  </svg>
+);
+
+export const IconChevronLeft = (props) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" {...props}>
+    <path d="m15 5-7 7 7 7" />
+  </svg>
+);
+
+export const IconChevronRight = (props) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" {...props}>
+    <path d="m9 5 7 7-7 7" />
+  </svg>
+);
+
+export const IconChevronDown = (props) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" {...props}>
+    <path d="m5 9 7 7 7-7" />
+  </svg>
+);
+
+export const IconAlert = (props) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" {...props}>
+    <path d="M12 9v4M12 16.5h.01" />
+    <path d="M10.29 3.86 1.82 18a1.5 1.5 0 0 0 1.3 2.25h17.76a1.5 1.5 0 0 0 1.3-2.25L13.71 3.86a1.5 1.5 0 0 0-2.42 0Z" />
+  </svg>
+);
+
+export const IconFileImage = (props) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" {...props}>
+    <rect x="3.5" y="3.5" width="17" height="17" rx="2" />
+    <circle cx="8.5" cy="9" r="1.5" />
+    <path d="m4.5 17 5-5 3.5 3.5L18 10l1.5 1.5" />
+  </svg>
+);
+
+export const IconGoogle = (props) => (
+  <svg viewBox="0 0 24 24" {...props}>
+    <path
+      fill="#4285F4"
+      d="M23.04 12.27c0-.82-.07-1.42-.22-2.05H12.24v3.72h6.19c-.12 1.03-.8 2.58-2.3 3.62l-.02.14 3.34 2.58.23.02c2.12-1.96 3.36-4.84 3.36-8.03Z"
+    />
+    <path
+      fill="#34A853"
+      d="M12.24 23.5c3.03 0 5.58-1 7.44-2.72l-3.55-2.74c-.95.66-2.22 1.12-3.89 1.12-2.97 0-5.48-1.96-6.38-4.67l-.13.01-3.47 2.68-.05.13c1.85 3.68 5.65 6.19 10.03 6.19Z"
+    />
+    <path
+      fill="#FBBC05"
+      d="M5.86 14.49a6.98 6.98 0 0 1-.38-2.24c0-.78.14-1.53.37-2.24l-.01-.15-3.51-2.72-.12.06A11.5 11.5 0 0 0 .74 12.25c0 1.86.45 3.61 1.24 5.15l3.88-3.01Z"
+    />
+    <path
+      fill="#EA4335"
+      d="M12.24 5.34c2.11 0 3.53.91 4.34 1.67l3.17-3.1C17.8 2.09 15.27 1 12.24 1 7.86 1 4.06 3.51 2.21 7.19l3.85 3.01c.91-2.71 3.42-4.86 6.18-4.86Z"
+    />
+  </svg>
+);

@@ -12,79 +12,153 @@ import {
 export const SERVICES = [
   {
     icon: IconPill,
-    title: "Prescription Medicines",
-    description: "Bring your prescription in-store or send a photo on WhatsApp for quick fulfillment.",
+    title: "Reseptli Dərmanlar",
+    description:
+      "Reseptinizi mağazamıza gətirin və ya WhatsApp-da şəklini göndərin, sürətlə hazırlayaq.",
   },
   {
     icon: IconTablets,
-    title: "OTC Products",
-    description: "Vitamins, supplements, first aid and everyday health essentials, always in stock.",
+    title: "Reseptsiz Məhsullar",
+    description: "Vitaminlər, əlavələr, ilk yardım və gündəlik sağlamlıq məhsulları, hər zaman anbarda.",
   },
   {
     icon: IconTruck,
-    title: "Home Delivery",
-    description: "Same-day delivery across the local area — order in minutes, delivered to your door.",
+    title: "Ünvana Çatdırılma",
+    description: "Yerli ərazidə eyni gün çatdırılma — bir neçə dəqiqəyə sifariş edin, qapınıza çatdıraq.",
   },
   {
     icon: IconStethoscope,
-    title: "Health Consultations",
-    description: "Friendly, licensed pharmacists on hand for dosage guidance and general health questions.",
+    title: "Sağlamlıq Məsləhəti",
+    description: "Dozaj və ümumi sağlamlıq sualları üçün dostyana, lisenziyalı əczaçılarımız yanınızda.",
   },
 ];
 
 export const TRUST_POINTS = [
   {
     icon: IconBadgeCheck,
-    title: "Licensed Pharmacists",
-    description: "Every order is checked by a fully licensed, experienced pharmacist.",
+    title: "Lisenziyalı Əczaçılar",
+    description: "Hər sifariş tam lisenziyalı, təcrübəli əczaçı tərəfindən yoxlanılır.",
   },
   {
     icon: IconShield,
-    title: "Genuine Medicines",
-    description: "Sourced only from verified manufacturers and authorized distributors.",
+    title: "Orijinal Dərmanlar",
+    description: "Yalnız təsdiqlənmiş istehsalçılardan və rəsmi distribütorlardan təmin olunur.",
   },
   {
     icon: IconTruck,
-    title: "Fast Delivery",
-    description: "Most orders reach you the same day, right when you need them.",
+    title: "Sürətli Çatdırılma",
+    description: "Sifarişlərin əksəriyyəti elə həmin gün, məhz ehtiyacınız olanda sizə çatır.",
   },
   {
     icon: IconClock,
-    title: "24/7 WhatsApp Support",
-    description: "Message us any time — a real person replies, day or night.",
+    title: "24/7 WhatsApp Dəstəyi",
+    description: "İstənilən vaxt bizə yazın — gecə-gündüz canlı insan cavab verir.",
   },
 ];
 
 // Sample placeholder categories/products — no prices, no cart.
 export const PRODUCTS = [
-  { name: "Cold & Flu Relief", category: "OTC" },
-  { name: "Daily Multivitamins", category: "Wellness" },
-  { name: "Blood Pressure Monitor", category: "Devices" },
-  { name: "Baby Care Essentials", category: "Baby & Mother" },
-  { name: "First Aid Kit", category: "First Aid" },
-  { name: "Skin Care Range", category: "Personal Care" },
-  { name: "Diabetes Care Supplies", category: "Chronic Care" },
-  { name: "Pain Relief Gel", category: "OTC" },
+  { name: "Soyuqdəymə və Qrip Vasitələri", category: "Reseptsiz" },
+  { name: "Gündəlik Multivitaminlər", category: "Sağlamlıq" },
+  { name: "Qan Təzyiqi Ölçən Cihaz", category: "Cihazlar" },
+  { name: "Uşaq Baxımı Əşyaları", category: "Ana və Uşaq" },
+  { name: "İlk Yardım Dəsti", category: "İlk Yardım" },
+  { name: "Dəri Baxımı Çeşidi", category: "Şəxsi Baxım" },
+  { name: "Diabet Baxım Vasitələri", category: "Xroniki Xəstəliklər" },
+  { name: "Ağrıkəsici Gel", category: "Reseptsiz" },
 ];
 
 // Clearly-marked sample testimonials — replace with real reviews later.
 export const TESTIMONIALS = [
   {
     quote:
-      "Sample testimonial — Ordered my monthly medicines on WhatsApp and had them delivered within an hour. So convenient!",
-    name: "A. Rahman",
-    role: "Sample review",
+      "Nümunə rəy — Aylıq dərmanlarımı WhatsApp-da sifariş etdim və bir saat ərzində çatdırıldı. Çox rahatdır!",
+    name: "A. Rəhman",
+    role: "Nümunə rəy",
   },
   {
     quote:
-      "Sample testimonial — The pharmacist took the time to explain my prescription clearly. Really felt looked after.",
+      "Nümunə rəy — Əczaçı reseptimi vaxt ayırıb aydın izah etdi. Özümü həqiqətən qayğı ilə əhatə olunmuş hiss etdim.",
     name: "S. Malik",
-    role: "Sample review",
+    role: "Nümunə rəy",
   },
   {
     quote:
-      "Sample testimonial — Great range of products and the staff are always friendly. My go-to pharmacy now.",
+      "Nümunə rəy — Geniş məhsul çeşidi və həmişə dostyana işçilər. Artıq daimi aptekimdir.",
     name: "T. Fernandes",
-    role: "Sample review",
+    role: "Nümunə rəy",
+  },
+];
+
+// Sample Google reviews — replace with real reviews pulled from your Business Profile.
+export const GOOGLE_REVIEWS = [
+  {
+    quote:
+      "Nümunə Google rəyi — Hər dəfə sürətli, dostyana xidmət. İhtiyacım olan hər şey həmişə mövcuddur.",
+    name: "Elvin M.",
+    rating: 5,
+    date: "2 həftə əvvəl",
+  },
+  {
+    quote:
+      "Nümunə Google rəyi — Reseptimi WhatsApp-da göndərdim, elə həmin axşam qapıma çatdırıldı.",
+    name: "Günel A.",
+    rating: 5,
+    date: "1 ay əvvəl",
+  },
+  {
+    quote:
+      "Nümunə Google rəyi — Bilikli əczaçılar və münasib qiymətlər. Bu apteki hamıya tövsiyə edirəm.",
+    name: "Rəşad H.",
+    rating: 4,
+    date: "1 ay əvvəl",
+  },
+  {
+    quote:
+      "Nümunə Google rəyi — Təmiz, səliqəli mağaza və işçilər həqiqətən müştərilərinə qayğı göstərir.",
+    name: "Nərmin S.",
+    rating: 5,
+    date: "2 ay əvvəl",
+  },
+];
+
+// Sample carried brands — replace names/logos with the real brands you stock.
+export const BRANDS = [
+  "Bayer",
+  "Pfizer",
+  "GSK",
+  "Johnson & Johnson",
+  "Sanofi",
+  "Novartis",
+  "Abbott",
+  "Roche",
+];
+
+// Sample FAQ — edit freely, this is the first thing customers skim before messaging.
+export const FAQS = [
+  {
+    question: "Dərman sifariş etmək üçün resept lazımdırmı?",
+    answer:
+      "Yalnız reseptlə satılan dərmanlar üçün etibarlı resept tələb olunur — şəklini yükləyə və ya birbaşa WhatsApp-da göndərə bilərsiniz, əczaçımız sifarişinizi təsdiqləyəcək. Reseptsiz məhsullar üçün buna ehtiyac yoxdur.",
+  },
+  {
+    question: "Ünvana çatdırılma nə qədər sürətlidir?",
+    answer:
+      "Saat 18:00-dan əvvəl verilən sifarişlərin əksəriyyəti yerli çatdırılma ərazimizdə elə həmin gün çatdırılır. Dəqiq vaxt üçün ünvanınızla birlikdə bizə WhatsApp-da yazın.",
+  },
+  {
+    question: "Reseptimin şəklini WhatsApp-da göndərə bilərəmmi?",
+    answer:
+      "Bəli — sifariş etməyin ən sürətli yolu budur. Reseptinizin aydın şəklini çəkib WhatsApp nömrəmizə göndərin, çatdırmadan əvvəl mövcudluğu və qiyməti təsdiqləyəcəyik.",
+  },
+  {
+    question: "İş saatlarınız hansılardır?",
+    answer:
+      "Bazar ertəsindən Şənbəyə qədər uzadılmış saatlarla, Bazar günü isə daha qısa saatlarla açığıq. Tam cədvəl üçün aşağıdakı İş saatları bölməsinə baxın.",
+  },
+  {
+    question: "Təcili sifarişlər üçün zəng edə biləcəyim biri varmı?",
+    answer:
+      "Bəli — təcili və ya iş saatlarından kənar ehtiyaclar üçün bu səhifədə göstərilən təcili əlaqə nömrəsindən istifadə edin, dərhal kömək etməyə çalışacağıq.",
   },
 ];

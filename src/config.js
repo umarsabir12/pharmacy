@@ -23,10 +23,17 @@ export const SITE = {
 
   email: "info@butaaptek.az",
 
+  // [EMERGENCY / URGENT ORDERS LINE] — shown in the emergency contact banner
+  emergencyPhone: "*0366",
+  emergencyPhoneHref: "*0366",
+
+  // Placeholder — replace with the real "Write a review" link for your Google Business Profile
+  googleReviewsUrl: "#",
+
   hours: [
-    { day: "Monday – Friday", time: "8:00 AM – 9:00 PM" },
-    { day: "Saturday", time: "9:00 AM – 8:00 PM" },
-    { day: "Sunday", time: "10:00 AM – 6:00 PM" },
+    { day: "Bazar ertəsi – Cümə", time: "08:00 – 21:00" },
+    { day: "Şənbə", time: "09:00 – 20:00" },
+    { day: "Bazar", time: "10:00 – 18:00" },
   ],
 
   // Placeholder social links — replace with real profiles
@@ -36,10 +43,11 @@ export const SITE = {
     twitter: "#",
   },
 
-  // Placeholder map embed — replace src with a real Google Maps embed URL
-  mapEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509precise!2d-74.0059!3d40.7128",
 };
+
+// Auto-built from the address above (no API key needed). For a pinpoint-accurate
+// map, replace with a real "Share > Embed a map" URL from Google Maps instead.
+SITE.mapEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(SITE.address)}&output=embed`;
 
 export function whatsappLink(message = SITE.whatsappMessage) {
   return `https://wa.me/${SITE.whatsappNumber}?text=${encodeURIComponent(message)}`;

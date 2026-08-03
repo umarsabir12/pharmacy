@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { SITE } from "../config";
+import Logo from "./Logo";
 import WhatsAppButton from "./WhatsAppButton";
 import { IconMapPin, IconMail, IconPhone } from "./icons";
 
@@ -15,12 +16,7 @@ export default function Footer() {
     <footer className="border-t border-slate-100 bg-slate-50">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-3">
         <div>
-          <div className="flex items-center gap-2">
-            <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-sm font-bold text-white">
-              {SITE.shortName}
-            </span>
-            <span className="text-lg font-semibold text-slate-800">{SITE.name}</span>
-          </div>
+          <Logo />
           <p className="mt-3 max-w-xs text-sm text-slate-500">{SITE.tagline}</p>
           <div className="mt-5 flex gap-3">
             {SOCIALS.map((s) => (
@@ -38,7 +34,7 @@ export default function Footer() {
 
         <div>
           <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-400">
-            Contact
+            Əlaqə
           </h3>
           <ul className="mt-4 space-y-3 text-sm text-slate-600">
             <li className="flex items-start gap-2">
@@ -62,33 +58,33 @@ export default function Footer() {
 
         <div>
           <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-400">
-            Quick links
+            Sürətli keçidlər
           </h3>
           <ul className="mt-4 space-y-3 text-sm text-slate-600">
             <li>
               <NavLink to="/products" className="hover:text-primary">
-                Products & Services
+                Məhsul və xidmətlər
               </NavLink>
             </li>
             <li>
               <NavLink to="/about" className="hover:text-primary">
-                About us
+                Haqqımızda
               </NavLink>
             </li>
             <li>
               <NavLink to="/contact" className="hover:text-primary">
-                Contact & hours
+                Əlaqə və iş saatları
               </NavLink>
             </li>
           </ul>
           <div className="mt-5">
-            <WhatsAppButton>Chat on WhatsApp</WhatsAppButton>
+            <WhatsAppButton>WhatsApp-da yazın</WhatsAppButton>
           </div>
         </div>
       </div>
 
       <div className="border-t border-slate-100 py-5 text-center text-xs text-slate-400">
-        © {new Date().getFullYear()} {SITE.name}. All rights reserved.
+        © {new Date().getFullYear()} {SITE.name}. Bütün hüquqlar qorunur.
       </div>
     </footer>
   );
