@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/*
+ * PRIMARY BRAND COLOR
+ * Change --color-primary (and the shades below) to re-theme the whole site.
+ * Shades were derived from --color-primary; regenerate them if you change it.
+ */
+@theme {
+  --color-primary: #1a2e8c;
+  --color-primary-50: #eaecf9;
+  --color-primary-100: #ccd2f0;
+  --color-primary-200: #99a5e1;
+  --color-primary-300: #6678d2;
+  --color-primary-400: #3c50b8;
+  --color-primary-500: #1a2e8c;
+  --color-primary-600: #16257a;
+  --color-primary-700: #121d63;
+  --color-primary-800: #0d154a;
+  --color-primary-900: #090f38;
+
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
