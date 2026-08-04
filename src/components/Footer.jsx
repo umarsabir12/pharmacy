@@ -34,7 +34,7 @@ export default function Footer() {
 
         <div>
           <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-400">
-            Əlaqə
+            Contact
           </h3>
           <ul className="mt-4 space-y-3 text-sm text-slate-600">
             <li className="flex items-start gap-2">
@@ -58,33 +58,33 @@ export default function Footer() {
 
         <div>
           <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-400">
-            Sürətli keçidlər
+            Quick links
           </h3>
           <ul className="mt-4 space-y-3 text-sm text-slate-600">
             <li>
               <NavLink to="/products" className="hover:text-primary">
-                Məhsul və xidmətlər
+                Products & Services
               </NavLink>
             </li>
             <li>
               <NavLink to="/about" className="hover:text-primary">
-                Haqqımızda
+                About us
               </NavLink>
             </li>
             <li>
               <NavLink to="/contact" className="hover:text-primary">
-                Əlaqə və iş saatları
+                Contact & hours
               </NavLink>
             </li>
           </ul>
           <div className="mt-5">
-            <WhatsAppButton>WhatsApp-da yazın</WhatsAppButton>
+            <WhatsAppButton>Chat on WhatsApp</WhatsAppButton>
           </div>
         </div>
       </div>
 
       <div className="border-t border-slate-100 py-5 text-center text-xs text-slate-400">
-        © {new Date().getFullYear()} {SITE.name}. Bütün hüquqlar qorunur.
+        © {new Date().getFullYear()} {SITE.name}. All rights reserved.
       </div>
     </footer>
   );

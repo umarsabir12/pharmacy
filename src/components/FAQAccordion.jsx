@@ -37,10 +37,10 @@ export default function FAQAccordion() {
       <div className="mx-auto max-w-3xl px-4 sm:px-6">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-slate-800 sm:text-3xl">
-            Tez-tez Verilən Suallar
+            Frequently Asked Questions
           </h2>
           <p className="mt-2 text-slate-500">
-            Qısa cavablar — hələ də əminsizsinizmi? Bizə WhatsApp-da yazın.
+            Quick answers — still unsure? Message us on WhatsApp.
           </p>
         </div>
 

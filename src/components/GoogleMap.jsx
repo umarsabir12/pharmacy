@@ -24,7 +24,7 @@ export default function GoogleMap({ className = "" }) {
         className="flex items-center justify-center gap-2 border-t border-slate-100 bg-white py-3 text-sm font-medium text-primary hover:bg-primary-50"
       >
         <IconMapPin className="h-4 w-4 shrink-0" />
-        Yol tarifi alın
+        Get Directions
       </a>
     </div>
   );

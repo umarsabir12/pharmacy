@@ -18,8 +18,8 @@ export default function PrescriptionUpload() {
   }
 
   const message = file
-    ? `Salam! Reseptimin şəklini seçdim (${file.name}) — indi şəkli göndərirəm.`
-    : "Salam! Reseptimin şəklini göndərmək istəyirəm.";
+    ? `Hello! I've selected my prescription (${file.name}) — attaching the photo now.`
+    : "Hello! I'd like to send a photo of my prescription.";
 
   return (
     <section className="bg-slate-50 py-16">
@@ -27,34 +27,34 @@ export default function PrescriptionUpload() {
         <div className="grid items-center gap-10 rounded-3xl border border-slate-100 bg-white p-6 shadow-sm sm:p-10 md:grid-cols-2">
           <div className="text-center md:text-left">
             <p className="text-sm font-semibold uppercase tracking-wide text-primary">
-              Resept ilə sifariş
+              Prescription orders
             </p>
             <h2 className="mt-2 text-2xl font-bold text-slate-800 sm:text-3xl">
-              Reseptinizi yükləyin və ya göndərin
+              Upload or send your prescription
             </h2>
             <p className="mt-3 text-slate-500">
-              Reseptinizin aydın şəklini çəkin, aşağıda seçin, sonra bizə WhatsApp-da göndərin.
-              Lisenziyalı əczaçımız sifarişinizi hazırlamazdan əvvəl mövcudluğu və qiyməti təsdiq
-              edəcək.
+              Take a clear photo of your prescription, select it below, then send it to us on
+              WhatsApp. A licensed pharmacist will confirm availability and price before we
+              prepare your order.
             </p>
             <ol className="mt-5 space-y-2 text-sm text-slate-600">
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-100 text-xs font-bold text-primary">
                   1
                 </span>
-                Aşağıda reseptinizi seçin və ya şəklini çəkin.
+                Select or photograph your prescription below.
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-100 text-xs font-bold text-primary">
                   2
                 </span>
-                "WhatsApp-da göndər" düyməsinə basın və açılan söhbətdə şəkli əlavə edin.
+                Tap "Send on WhatsApp" and attach the photo in the chat that opens.
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-100 text-xs font-bold text-primary">
                   3
                 </span>
-                Sifarişinizi təsdiqləyib çatdırılma və ya götürmə təşkil edirik.
+                We confirm your order and arrange delivery or pickup.
               </li>
             </ol>
           </div>
@@ -77,7 +77,7 @@ export default function PrescriptionUpload() {
               {previewUrl ? (
                 <img
                   src={previewUrl}
-                  alt="Seçilmiş resept şəkli"
+                  alt="Selected prescription preview"
                   className="h-32 w-32 rounded-xl object-cover shadow-sm"
                 />
               ) : file ? (
@@ -86,9 +86,9 @@ export default function PrescriptionUpload() {
                 <IconUpload className="h-10 w-10 text-primary" />
               )}
               <span className="text-sm font-medium text-slate-700">
-                {file ? file.name : "Şəkil çəkmək və ya fayl seçmək üçün toxunun"}
+                {file ? file.name : "Tap to take a photo or choose a file"}
               </span>
-              <span className="text-xs text-slate-400">JPG, PNG və ya PDF</span>
+              <span className="text-xs text-slate-400">JPG, PNG or PDF</span>
             </button>
 
             <a
@@ -98,7 +98,7 @@ export default function PrescriptionUpload() {
               className="mt-4 flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white shadow-sm transition-transform duration-150 hover:scale-[1.02] hover:bg-primary-600 active:scale-95"
             >
               <IconWhatsApp className="h-5 w-5 shrink-0" />
-              WhatsApp-da göndər
+              Send on WhatsApp
             </a>
           </div>
         </div>

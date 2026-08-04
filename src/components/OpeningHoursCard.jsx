@@ -1,21 +1,15 @@
 import { SITE } from "../config";
 import { IconClock } from "./icons";
 
-const WEEKDAYS = [
-  "Bazar",
-  "Bazar ertəsi",
-  "Çərşənbə axşamı",
-  "Çərşənbə",
-  "Cümə axşamı",
-  "Cümə",
-  "Şənbə",
-];
+const WEEKDAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 function parseTimeToMinutes(str) {
-  const match = str.trim().match(/(\d{1,2}):(\d{2})/);
+  const match = str.trim().match(/(\d{1,2}):(\d{2})\s*(AM|PM)/i);
   if (!match) return null;
-  const [, h, m] = match;
-  return parseInt(h, 10) * 60 + parseInt(m, 10);
+  let [, h, m, period] = match;
+  h = parseInt(h, 10) % 12;
+  if (period.toUpperCase() === "PM") h += 12;
+  return h * 60 + parseInt(m, 10);
 }
 
 // Best-effort "open now" check parsed from the human-readable hours strings
@@ -56,7 +50,7 @@ export default function OpeningHoursCard() {
       <div className="flex items-center justify-between gap-3">
         <h3 className="flex items-center gap-2 font-semibold text-slate-800">
           <IconClock className="h-5 w-5 text-primary" />
-          İş saatları
+          Opening Hours
         </h3>
         {status && (
           <span
@@ -67,7 +61,7 @@ export default function OpeningHoursCard() {
             <span
               className={`h-1.5 w-1.5 rounded-full ${status.open ? "bg-emerald-500" : "bg-slate-400"}`}
             />
-            {status.open ? "Açıqdır" : "Bağlıdır"}
+            {status.open ? "Open now" : "Closed now"}
           </span>
         )}
       </div>

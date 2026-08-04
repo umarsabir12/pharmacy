@@ -4,23 +4,23 @@ import { IconTruck, IconClock, IconMapPin, IconShield } from "./icons";
 const STEPS = [
   {
     icon: IconWhatsAppLike,
-    title: "Sifarişinizi yazın",
-    description: "Dərman siyahınızı və ya reseptinizin şəklini WhatsApp-da göndərin.",
+    title: "Message your order",
+    description: "Send your medicine list or prescription photo on WhatsApp.",
   },
   {
     icon: IconShield,
-    title: "Hazırlayır və təsdiqləyirik",
-    description: "Əczaçımız göndərməzdən əvvəl mövcudluğu və qiyməti yoxlayıb təsdiqləyir.",
+    title: "We prepare & confirm",
+    description: "Our pharmacist checks stock and confirms price before dispatch.",
   },
   {
     icon: IconMapPin,
-    title: "Çatdırılmaya göndərilir",
-    description: "Kuryer sifarişinizi götürüb ünvanınıza yola düşür.",
+    title: "Out for delivery",
+    description: "A rider picks up your order and heads to your address.",
   },
   {
     icon: IconClock,
-    title: "Eyni gün çatdırılır",
-    description: "Yerli sifarişlərin əksəriyyəti bir neçə saat ərzində qapınıza çatdırılır.",
+    title: "Delivered same day",
+    description: "Most local orders arrive within hours, right to your door.",
   },
 ];
 
@@ -41,23 +41,23 @@ export default function DeliverySection() {
       <div className="grid items-center gap-10 lg:grid-cols-2">
         <div className="text-center lg:text-left">
           <p className="text-sm font-semibold uppercase tracking-wide text-primary">
-            Ünvana çatdırılma
+            Home delivery
           </p>
           <h2 className="mt-2 text-2xl font-bold text-slate-800 sm:text-3xl">
-            Dərmanlarınız qapınıza çatdırılır
+            Your medicines, delivered to your door
           </h2>
           <p className="mt-3 text-slate-500">
-            Getməyə ehtiyac yoxdur — WhatsApp-da sifariş edin, dərmanlarınızı və sağlamlıq
-            məhsullarınızı, adətən elə həmin gün, birbaşa sizə çatdıraq.
+            Skip the trip — order on WhatsApp and we'll bring your medicines and health essentials
+            straight to you, usually the same day.
           </p>
           <div className="mt-6 flex items-center justify-center gap-3 lg:justify-start">
             <IconTruck className="h-6 w-6 shrink-0 text-primary" />
             <span className="text-sm font-medium text-slate-600">
-              Yerli ərazidə eyni gün çatdırılma
+              Same-day delivery across the local area
             </span>
           </div>
           <div className="mt-6 flex justify-center lg:justify-start">
-            <WhatsAppButton>Çatdırılma üçün sifariş et</WhatsAppButton>
+            <WhatsAppButton>Order for Delivery</WhatsAppButton>
           </div>
         </div>
 
@@ -71,7 +71,7 @@ export default function DeliverySection() {
                 <step.icon className="h-5 w-5" />
               </div>
               <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-primary-400">
-                {i + 1}-ci addım
+                Step {i + 1}
               </p>
               <h3 className="mt-1 font-semibold text-slate-800">{step.title}</h3>
               <p className="mt-1 text-sm text-slate-500">{step.description}</p>

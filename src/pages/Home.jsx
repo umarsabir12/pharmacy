@@ -28,23 +28,23 @@ export default function Home() {
 
         <div className="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 md:py-32">
           <div className="max-w-xl text-center md:text-left">
-            <p className="text-sm font-semibold uppercase tracking-wide text-primary-200">
+            <p className="text-lg font-semibold uppercase text-accent-300">
               {SITE.name}
             </p>
             <h1 className="mt-3 text-4xl font-bold leading-tight text-white sm:text-5xl">
               {SITE.tagline}
             </h1>
             <p className="mt-4 text-lg text-primary-100">
-              Orijinal dərmanlar, lisenziyalı əczaçılar və sürətli ünvana çatdırılma — hamısı bir
-              WhatsApp mesajı qədər yaxındır.
+              Genuine medicines, licensed pharmacists, and fast home delivery — all one WhatsApp
+              message away.
             </p>
             <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row md:justify-start">
-              <WhatsAppButton className="text-base">WhatsApp-da yazın</WhatsAppButton>
+              <WhatsAppButton className="text-base">Chat on WhatsApp</WhatsAppButton>
               <Link
                 to="/products"
-                className="text-sm font-medium text-white underline-offset-4 hover:text-primary-200 hover:underline"
+                className="text-sm font-medium text-white underline-offset-4 hover:text-accent-300 hover:underline"
               >
-                Məhsul və xidmətlərə baxın
+                Browse products & services
               </Link>
             </div>
           </div>
@@ -54,8 +54,8 @@ export default function Home() {
       {/* Services */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-slate-800 sm:text-3xl">Xidmətlərimiz</h2>
-          <p className="mt-2 text-slate-500">Ailənizin bütün ehtiyacları bir yerdə.</p>
+          <h2 className="text-2xl font-bold text-slate-800 sm:text-3xl">Our Services</h2>
+          <p className="mt-2 text-slate-500">Everything your family needs, in one place.</p>
         </div>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {SERVICES.map((s) => (
@@ -75,14 +75,14 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="flex items-end justify-between">
             <div>
-              <h2 className="text-2xl font-bold text-slate-800 sm:text-3xl">Seçilmiş Kateqoriyalar</h2>
-              <p className="mt-2 text-slate-500">Satdığımız məhsullara qısa baxış (nümunə əşyalar).</p>
+              <h2 className="text-2xl font-bold text-slate-800 sm:text-3xl">Featured Categories</h2>
+              <p className="mt-2 text-slate-500">A quick look at what we stock (sample items).</p>
             </div>
             <Link
               to="/products"
               className="hidden text-sm font-medium text-primary hover:underline sm:block"
             >
-              Hamısına baxın →
+              View all →
             </Link>
           </div>
           <div className="mt-10 grid gap-5 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
@@ -99,7 +99,7 @@ export default function Home() {
       {/* Why choose us */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-slate-800 sm:text-3xl">Niyə Bizi Seçməlisiniz</h2>
+          <h2 className="text-2xl font-bold text-slate-800 sm:text-3xl">Why Choose Us</h2>
         </div>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {TRUST_POINTS.map((t) => (
@@ -124,12 +124,12 @@ export default function Home() {
 
       {/* CTA banner */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <div className="flex flex-col items-center justify-between gap-6 rounded-3xl bg-primary px-8 py-10 text-center text-white sm:flex-row sm:text-left">
+        <div className="flex flex-col items-center justify-between gap-6 rounded-3xl border border-accent/30 bg-primary px-8 py-10 text-center text-white sm:flex-row sm:text-left">
           <div>
-            <h2 className="text-2xl font-bold text-white">Bu gün nəsə çatdırılmasına ehtiyacınız var?</h2>
-            <p className="mt-1 text-primary-50">Bizə WhatsApp-da yazın — adətən bir neçə dəqiqə ərzində cavab veririk.</p>
+            <h2 className="text-2xl font-bold text-white">Need something delivered today?</h2>
+            <p className="mt-1 text-primary-50">Message us on WhatsApp — we usually reply in minutes.</p>
           </div>
-          <WhatsAppButton variant="outline-light">WhatsApp-da yazın</WhatsAppButton>
+          <WhatsAppButton variant="outline-light">Chat on WhatsApp</WhatsAppButton>
         </div>
       </section>
     </>

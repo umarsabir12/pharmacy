@@ -4,10 +4,10 @@ import Logo from "./Logo";
 import WhatsAppButton from "./WhatsAppButton";
 
 const NAV_LINKS = [
-  { to: "/", label: "Ana səhifə" },
-  { to: "/products", label: "Məhsul və xidmətlər" },
-  { to: "/about", label: "Haqqımızda" },
-  { to: "/contact", label: "Əlaqə" },
+  { to: "/", label: "Home" },
+  { to: "/products", label: "Products & Services" },
+  { to: "/about", label: "About" },
+  { to: "/contact", label: "Contact" },
 ];
 
 function NavItem({ to, label, onClick }) {
@@ -44,16 +44,16 @@ export default function Header() {
         </nav>
 
         <div className="hidden md:block">
-          <WhatsAppButton>WhatsApp-da sifariş et</WhatsAppButton>
+          <WhatsAppButton>Order on WhatsApp</WhatsAppButton>
         </div>
 
         <button
           type="button"
-          aria-label="Menyunu aç/bağla"
+          aria-label="Toggle menu"
           className="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 md:hidden"
           onClick={() => setOpen((v) => !v)}
         >
-          <span className="sr-only">Menyu</span>
+          <span className="sr-only">Menu</span>
           <div className="space-y-1.5">
             <span className="block h-0.5 w-5 bg-slate-700" />
             <span className="block h-0.5 w-5 bg-slate-700" />
@@ -68,7 +68,7 @@ export default function Header() {
             {NAV_LINKS.map((link) => (
               <NavItem key={link.to} {...link} onClick={() => setOpen(false)} />
             ))}
-            <WhatsAppButton className="w-fit">WhatsApp-da sifariş et</WhatsAppButton>
+            <WhatsAppButton className="w-fit">Order on WhatsApp</WhatsAppButton>
           </div>
         </div>
       )}

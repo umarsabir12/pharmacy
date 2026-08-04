@@ -3,7 +3,7 @@ import { IconWhatsApp } from "./icons";
 
 export default function WhatsAppButton({
   message,
-  children = "WhatsApp-da sifariş et",
+  children = "Order on WhatsApp",
   variant = "solid",
   className = "",
 }) {

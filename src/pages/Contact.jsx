@@ -10,16 +10,16 @@ export default function Contact() {
   return (
     <>
       <PageHero
-        eyebrow="Bizimlə əlaqə"
-        title="Bizi Ziyarət Edin və ya Əlaqə Saxlayın"
-        description="Şəxsən baş çəkin, zəng edin və ya WhatsApp-da yazın — sizin üçün ən rahat olanı seçin."
+        eyebrow="Get in touch"
+        title="Visit or Contact Us"
+        description="Drop by in person, call, or message us on WhatsApp — whichever is easiest for you."
       />
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <div className="grid gap-10 md:grid-cols-2">
           {/* Info + hours */}
           <div>
-            <h2 className="text-xl font-bold text-slate-800">Əlaqə Məlumatları</h2>
+            <h2 className="text-xl font-bold text-slate-800">Contact Details</h2>
             <ul className="mt-5 space-y-4 text-sm text-slate-600">
               <li className="flex items-start gap-3">
                 <IconMapPin className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
@@ -40,7 +40,7 @@ export default function Contact() {
             </ul>
 
             <div className="mt-8">
-              <WhatsAppButton>WhatsApp-da yazın</WhatsAppButton>
+              <WhatsAppButton>Chat on WhatsApp</WhatsAppButton>
             </div>
 
             <div className="mt-10">
@@ -54,7 +54,7 @@ export default function Contact() {
 
           {/* Interactive map */}
           <div>
-            <h2 className="text-xl font-bold text-slate-800">Bizi Tapın</h2>
+            <h2 className="text-xl font-bold text-slate-800">Find Us</h2>
             <div className="mt-5">
               <GoogleMap />
             </div>

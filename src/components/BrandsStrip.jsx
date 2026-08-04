@@ -5,10 +5,9 @@ export default function BrandsStrip() {
   return (
     <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
       <div className="text-center">
-        <h2 className="text-2xl font-bold text-slate-800 sm:text-3xl">Satdığımız Brendlər</h2>
+        <h2 className="text-2xl font-bold text-slate-800 sm:text-3xl">Brands We Carry</h2>
         <p className="mt-2 text-slate-500">
-          Etibarlı istehsalçılardan təmin olunur — nümunə siyahıdır, satdığınız brendlərlə əvəz
-          edin.
+          Sourced from trusted manufacturers — sample brand list, replace with what you stock.
         </p>
       </div>
 

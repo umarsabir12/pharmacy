@@ -5,44 +5,45 @@
 
 export const SITE = {
   // [PHARMACY NAME]
-  name: "Buta Aptek",
+  name: "Noura Global Medical Pharmacy",
+  // Arabic rendering of the name — shown alongside the English name in the logo/header
+  nameArabic: "صيدلية نورا العالمية الطبية",
   // Short initials/text mark used in the logo badge
-  shortName: "BA",
-  tagline: "Sizin etibarlı aptekiniz",
+  shortName: "NG",
+  tagline: "Your trusted global pharmacy",
 
   // [PHONE] — displayed, tel: link uses this too
-  phone: "+994 12 566 74 39",
-  phoneHref: "+994125667439",
+  phone: "+966 56 297 6054",
+  phoneHref: "+966562976054",
 
   // [WHATSAPP NUMBER] — digits only, no + or spaces, for wa.me links
-  whatsappNumber: "994552157439",
-  whatsappMessage: "Salam! Məhsul/xidmət haqqında soruşmaq istəyirəm.",
+  whatsappNumber: "966562976054",
+  whatsappMessage: "Hello! I'd like to ask about a product/service.",
 
   // [ADDRESS]
-  address: "Bakı ş., N.Nərimanov r., Montin q., Neymatulla küç. 26",
+  address: "Sheikh Zayed Road, Business Bay, Dubai, UAE",
 
-  email: "info@butaaptek.az",
+  email: "info@nouraglobalpharmacy.com",
 
   // [EMERGENCY / URGENT ORDERS LINE] — shown in the emergency contact banner
-  emergencyPhone: "*0366",
-  emergencyPhoneHref: "*0366",
+  emergencyPhone: "+971 800 6872",
+  emergencyPhoneHref: "+9718006872",
 
   // Placeholder — replace with the real "Write a review" link for your Google Business Profile
   googleReviewsUrl: "#",
 
   hours: [
-    { day: "Bazar ertəsi – Cümə", time: "08:00 – 21:00" },
-    { day: "Şənbə", time: "09:00 – 20:00" },
-    { day: "Bazar", time: "10:00 – 18:00" },
+    { day: "Monday – Friday", time: "8:00 AM – 10:00 PM" },
+    { day: "Saturday", time: "9:00 AM – 10:00 PM" },
+    { day: "Sunday", time: "10:00 AM – 8:00 PM" },
   ],
 
   // Placeholder social links — replace with real profiles
   social: {
-    facebook: "https://facebook.com/butaaptek0366",
-    instagram: "https://instagram.com/butaaptek_",
+    facebook: "#",
+    instagram: "#",
     twitter: "#",
   },
-
 };
 
 // Auto-built from the address above (no API key needed). For a pinpoint-accurate

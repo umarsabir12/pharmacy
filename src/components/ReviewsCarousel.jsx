@@ -37,10 +37,10 @@ export default function ReviewsCarousel() {
         <div className="text-center">
           <div className="flex items-center justify-center gap-2">
             <IconGoogle className="h-6 w-6" />
-            <h2 className="text-2xl font-bold text-slate-800 sm:text-3xl">Google Rəyləri</h2>
+            <h2 className="text-2xl font-bold text-slate-800 sm:text-3xl">Google Reviews</h2>
           </div>
           <p className="mt-2 text-sm text-slate-400">
-            Nümunə rəylərdir — real Google Biznes Profilinizi qoşun.
+            Sample reviews for layout purposes — connect your real Google Business Profile.
           </p>
           <a
             href={SITE.googleReviewsUrl}
@@ -48,7 +48,7 @@ export default function ReviewsCarousel() {
             rel="noopener noreferrer"
             className="mt-2 inline-block text-sm font-medium text-primary hover:underline"
           >
-            Rəy bildirin →
+            Leave us a review →
           </a>
         </div>
 
@@ -75,7 +75,7 @@ export default function ReviewsCarousel() {
 
           <button
             type="button"
-            aria-label="Əvvəlki rəy"
+            aria-label="Previous review"
             onClick={() => go(-1)}
             className="absolute left-0 top-1/2 hidden h-10 w-10 -translate-x-4 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 shadow-sm hover:text-primary sm:flex"
           >
@@ -83,7 +83,7 @@ export default function ReviewsCarousel() {
           </button>
           <button
             type="button"
-            aria-label="Növbəti rəy"
+            aria-label="Next review"
             onClick={() => go(1)}
             className="absolute right-0 top-1/2 hidden h-10 w-10 -translate-y-1/2 translate-x-4 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 shadow-sm hover:text-primary sm:flex"
           >
@@ -96,7 +96,7 @@ export default function ReviewsCarousel() {
             <button
               key={r.name}
               type="button"
-              aria-label={`${i + 1}-ci rəyə keç`}
+              aria-label={`Go to review ${i + 1}`}
               onClick={() => setIndex(i)}
               className={`h-2 rounded-full transition-all ${
                 i === index ? "w-6 bg-primary" : "w-2 bg-slate-300"
