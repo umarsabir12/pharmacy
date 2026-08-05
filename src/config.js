@@ -5,29 +5,29 @@
 
 export const SITE = {
   // [PHARMACY NAME]
-  name: "Noura Global Medical Pharmacy",
+  name: "Elaf Pharmacy",
   // Arabic rendering of the name — shown alongside the English name in the logo/header
-  nameArabic: "صيدلية نورا العالمية الطبية",
+  nameArabic: "صيدلية إيلاف",
   // Short initials/text mark used in the logo badge
-  shortName: "NG",
+  shortName: "EP",
   tagline: "Your trusted global pharmacy",
 
   // [PHONE] — displayed, tel: link uses this too
-  phone: "+966 56 297 6054",
-  phoneHref: "+966562976054",
+  phone: "+966 56 910 3622",
+  phoneHref: "+966569103622",
 
   // [WHATSAPP NUMBER] — digits only, no + or spaces, for wa.me links
-  whatsappNumber: "966562976054",
+  whatsappNumber: "966569103622",
   whatsappMessage: "Hello! I'd like to ask about a product/service.",
 
   // [ADDRESS]
-  address: "Sheikh Zayed Road, Business Bay, Dubai, UAE",
+  address: "4049 Al Madaris, 7043, Jeddah 22232, Saudi Arabia",
 
-  email: "info@nouraglobalpharmacy.com",
+  email: "info@elafpharmacy.com",
 
   // [EMERGENCY / URGENT ORDERS LINE] — shown in the emergency contact banner
-  emergencyPhone: "+971 800 6872",
-  emergencyPhoneHref: "+9718006872",
+  emergencyPhone: "800 244 6872",
+  emergencyPhoneHref: "8002446872",
 
   // Placeholder — replace with the real "Write a review" link for your Google Business Profile
   googleReviewsUrl: "#",

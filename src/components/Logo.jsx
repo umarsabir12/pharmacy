@@ -1,29 +1,15 @@
 import { SITE } from "../config";
 
-// Icon mark: rounded-square badge with a pill-cross glyph. Reused for header,
+// Icon mark: a bold green "E" monogram on a white badge. Reused for header,
 // footer and favicon so the brand mark stays consistent across surfaces.
 export function LogoMark({ className = "h-9 w-9" }) {
   return (
     <svg viewBox="0 0 40 40" className={className} aria-hidden="true">
-      <rect width="40" height="40" rx="11" fill="var(--color-primary)" />
-      <rect
-        x="1"
-        y="1"
-        width="38"
-        height="38"
-        rx="10"
-        fill="none"
-        stroke="var(--color-accent)"
-        strokeWidth="1.25"
-      />
-      <path
-        d="M14 26.5c-3.6 0-6.5-2.9-6.5-6.5s2.9-6.5 6.5-6.5h5.5v5.5H14a1 1 0 1 0 0 2h5.5v5.5H14Z"
-        fill="#fff"
-      />
-      <path
-        d="M26 13.5c3.6 0 6.5 2.9 6.5 6.5S29.6 26.5 26 26.5h-5.5V21H26a1 1 0 1 0 0-2h-5.5v-5.5H26Z"
-        fill="var(--color-accent)"
-      />
+      <rect width="40" height="40" rx="10" fill="#fff" stroke="#e2e8f0" strokeWidth="1.5" />
+      <rect x="10" y="8" width="6" height="24" rx="1.5" fill="#178a4c" />
+      <rect x="10" y="8" width="21" height="6.5" rx="1.5" fill="#178a4c" />
+      <rect x="10" y="16.75" width="17" height="6.5" rx="1.5" fill="#178a4c" />
+      <rect x="10" y="25.5" width="21" height="6.5" rx="1.5" fill="#178a4c" />
     </svg>
   );
 }
